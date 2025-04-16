@@ -1,26 +1,3 @@
-// Trabalho M1 - Estrutura de Dados - Professor Carrard
-// Alunas: Maria Eduarda Lima da Silva e Nicoly Maria Tejero Colutti
-// Jogo: "Rouba Monte"
-// O objetivo é capturar cartas da mesa. Você faz isso jogando uma carta da sua mão que tem o mesmo valor de uma das cartas da mesa.
-// Quando isso acontece, você "captura" (ou rouba) essa carta da mesa junto com a que você jogou.
-/*
-O que acontece a cada turno:
-    Jogador 1:
-        1- Vê as cartas na mesa e na mão.
-        2- Escolhe uma carta pra jogar (por índice).
-        3- O jogo verifica:
-            -Se tem alguma carta na mesa com o mesmo valor, você captura ambas.
-            -Se não tem, a carta vai pra mesa.
-    CPU (Jogador 2):
-        Age de forma aleatória ou com uma lógica simples, tipo:
-            -Se tem carta igual na mesa → captura.
-            -Se não tem → joga uma carta aleatória na mesa.
-    O jogo continua até:
-        -As cartas do baralho acabarem.
-        -As mãos dos jogadores ficarem vazias.
-        -O jogo termina e o jogador com mais cartas capturadas vence.
-*/
-
 #include <cstdlib>
 #include <ctime>
 #include "ListaEstatica.hpp"
@@ -119,7 +96,7 @@ int main(){
     Mesa mesa;
     inicializarBaralho(baralho); // inicializa o baralho com 40 cartas
     embaralhar(baralho); // embaralha o baralho
-    jogador1.nome = "Professor Carrard";
+    jogador1.nome = "Jogador 1";
     jogador2.nome = "CPU"; // jogador automático
 
     // inicializa as listas das mãos e montes dos jogadores e as cartas da mesa
